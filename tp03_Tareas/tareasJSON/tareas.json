@@ -1,0 +1,22 @@
+[
+  {
+    "título": "comer",
+    "estado": "en progreso"
+  },
+  {
+    "título": "correr",
+    "estado": "terminada"
+  },
+  {
+    "título": "estudiar",
+    "estado": "pendiente"
+  },
+  {
+    "título": "aprobar",
+    "estado": "pendiente"
+  },
+  {
+    "título": "amigos",
+    "estado": "pendiente"
+  }
+]

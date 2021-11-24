@@ -1,0 +1,1 @@
+const funcionesDeTareas=require('./funcionesDeTareas');

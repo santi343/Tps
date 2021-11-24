@@ -1,0 +1,126 @@
+/**.home header**/
+.home header{
+    background-color: var(--color-amarillo);   
+}
+.home header img{
+    margin: 25px 0 20px 4%;
+    width: 45%;
+    height: auto;
+}
+
+.home header div,.fa-search{
+    margin-left: 4%;    
+}
+.home header .fa-search{
+    background-color: white;
+    border:1px solid black;
+    padding: 1px;
+    margin-left: 5px;
+}
+
+.home header div input{
+    border:0;
+    height: 20px;
+    width: 55%;
+}
+.home header div input::placeholder{
+    font-size: 10px;
+} 
+.home header h1{
+    font-size: 12px;
+    margin:10px auto 12px;
+    text-align: center;
+}
+.home header nav{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.home header div:last-child{
+    height: 55px;
+    text-align: center;
+    margin:15px 0px 0px;    
+}
+.home .fa-bars{
+    color: white;
+    background-color: var(--color-celeste);
+    padding: 10px;
+    border-radius:20%;
+}
+.banner{
+   width: 100%;
+}
+/** .home main **/
+.home main{
+    width: 90%;
+    background-color: var(--color-grisClaro);
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home main img{
+    width: 90%;
+}
+.contenedor{
+    text-align: start;
+    border-top: 5px solid var(--color-grisClaro);
+    padding-left: 15px;
+}
+.home article{
+    background-color: white;
+    margin-bottom:10px;
+    
+}
+.h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/**.home footer**/
+.home footer section:first-child{
+    margin-top: 10px;
+}
+.home footer div > p{
+    color: var(--color-grisOscuro);
+    text-align: center;
+}
+.home footer div > h4{
+    text-align: center;
+}
+.home footer div p>i{
+    color: var(--color-celeste);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.home footer section > div{
+    margin-top: 30px;   
+}
+.home footer section div:last-child{
+    margin-top: 30px;
+    text-align: initial;  
+    margin-left: 2%; 
+}
+@media (max-width: 360px){
+    .home main section article>div:last-child h3{
+        display: none;
+    }
+    .home header>nav{
+        display: none;
+    }
+}
+@media ( min-width: 361px){
+    .home header div:last-child{
+        display: none;
+    }
+    .home header ul:last-child{
+        border-bottom : 12px solid var(--color-amarillo);
+    }
+    .home header div{
+       width: 300px;
+    }
+    .home article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+}
+@media(max-width: 769px){
+
+}

@@ -1,0 +1,147 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section img {
+    width: 100%;
+}
+
+main section h3.titulares {
+    font-size: 1.3rem; /* 24px */
+    color: var(--colorGris-oscuro);
+    margin-left: 10px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 0.2rem rgb(200, 200, 200);
+    margin-bottom: 1rem;
+}
+
+main section.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .precios {
+    width: 30%;
+}
+
+main .descuentos {
+    width: 70%;
+}
+
+main .precios,
+main .descuentos {
+    align-content: baseline;
+}
+
+p.precios,
+h3.descripcion {
+    font-size: 1.125rem; /* 18px */
+    color: #666;
+}
+
+p.descuentos {
+    font-size: 1rem; /* 16px */
+}
+
+main section div article {
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+main article div {
+    border-top: solid 1px var(--colorGris-claro);
+    margin: 0 15px;
+    padding: 10px;
+}
+main article img {
+    width: 100%;
+}
+
+main div i,
+.descuentos {
+    color: var(--color-verde);
+}
+
+main .description {
+    width: 30%;
+}
+
+main div {
+    position: relative;
+}
+
+/* Icono del camión */
+
+main div i {
+    display: block;
+    font-size: 1rem;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--color-verde);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main h3.descripcion {
+    padding-top: 20px;
+    margin: 20px 0;
+}
+
+main .precios {
+    width: 70%;
+    display: inline;
+}
+
+main .descuentos {
+    width: 30%;
+    display: inline;
+}
+
+@media (min-width: 576px) {
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section h3.titulares {
+        margin-left: 30px;
+    }
+
+    main section div article {
+        width: 44%;
+        margin: 0.5rem;
+    }
+
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 768px) {
+    
+    main section h3.titulares {
+        margin-left: 45px;
+    }
+
+    main section div article {
+        width: 22%;
+    }
+
+    p.descuentos,
+    h3.descripcion {
+        font-size: 1rem; /* 16px */
+    }
+}

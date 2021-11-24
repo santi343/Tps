@@ -1,0 +1,173 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section img {
+    width: 100%;
+}
+
+main section h3.headline {
+    font-size: 1.3rem; /* 24px */
+    color: var(--colorGris-oscuro);
+    margin-left: 10px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 0.2rem rgb(200, 200, 200);
+    margin-bottom: 1rem;
+}
+
+main section.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .price {
+    width: 30%;
+}
+
+main .discount {
+    width: 70%;
+}
+
+main .price,
+main .discount {
+    align-content: baseline;
+}
+
+p.price,
+h3.description {
+    font-size: 1.125rem; /* 18px */
+    color: #666;
+}
+
+p.discount {
+    font-size: 1rem; /* 16px */
+}
+
+main section div article {
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+main article div {
+    border-top: solid 1px var(--colorGris-claro);
+    margin: 0 15px;
+    padding: 10px;
+}
+main article img {
+    width: 100%;
+}
+
+main div i,
+.discount {
+    color: var(--color-verde);
+}
+
+main .description {
+    width: 30%;
+}
+
+main div {
+    position: relative;
+}
+
+/* Icon of Truck */
+
+main div i {
+    display: block;
+    font-size: 1rem;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--color-verde);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: rotate 0.5s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+article:hover .shipping {
+    animation: rotate 1s ease-out infinite alternate;
+}
+.shipping:hover {
+    background-color: #0022aa;
+}
+main h3.description {
+    padding-top: 20px;
+    margin: 20px 0;
+    display: none;
+}
+main article {
+    transition: all 0.2s;
+    box-shadow: 82px 82px 5px white;
+}
+main article:hover h3.description {
+    display: block;
+}
+main div article:hover {
+    /*box-shadow: 2px 2px 5px white;*/
+    box-shadow: 4px 4px 4px white;
+    /*padding: 10px;*/
+}
+
+main .price {
+    width: 70%;
+    display: inline;
+}
+
+main .discount {
+    width: 30%;
+    display: inline;
+}
+
+@media (min-width: 576px) {
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.container-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section h3.headline {
+        margin-left: 30px;
+    }
+
+    main section div article {
+        width: 44%;
+        margin: 0.5rem;
+    }
+
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 768px) {
+    main section h3.headline {
+        margin-left: 45px;
+    }
+
+    main section div article {
+        width: 22%;
+    }
+
+    p.discount,
+    h3.description {
+        font-size: 1rem; /* 16px */
+    }
+}

@@ -1,0 +1,240 @@
+:root {
+    --color-amarillo: #eac926;
+    --color-azul: #03264c;
+    --color-celeste: #1259c3;
+    --colorGris-oscuro: #666;
+    --colorGris-claro: #ebebeb;
+    --color-verde: #39b54a;
+    --color-blanco: #fff;
+    --color-negro: #000;
+
+    --fuente: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorGris-claro);
+    font-family: var(--fuente);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-negro);
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--color-amarillo);
+    padding: 10px;
+}
+
+header div.top-header {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div div {
+    width: 50%;
+    text-align: center;
+}
+
+header .logo {
+    padding: 5px;
+}
+
+header div form {
+    width: 50%;
+}
+
+/* Search y lupa */
+
+header div form .search {
+    margin-left: 0.5rem;
+    width: 70%;
+}
+
+header div .compra-cuotas {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.lupa {
+    background-color: var(--colorGris-claro);
+    padding: 5px;
+    border: solid 1px var(--color-negro);
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+/* Ofertas, Tiendas, creá tu cuenta, etc */
+
+header div .nav-right,
+.nav-left {
+    display: none;
+}
+
+header div nav {
+    max-width: 600px;
+}
+
+header .burger-menu {
+    width: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: var(--color-celeste);
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+    header .top-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Search y lupa */
+
+    header div div {
+        width: 30%;
+    }
+
+    header div form {
+        width: 30%;
+    }
+
+    header div div.compra-cuotas {
+        width: 30%;
+        font-size: 0.75rem;
+    }
+
+    header div.bottom-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Ofertas, Tiendas, creá tu cuenta, etc */
+
+    header div a {
+        text-decoration: none;
+        color: var(--color-negro);
+        margin: 0 10px;
+    }
+
+    header div a:hover {
+        color: var(--color-celeste);
+    }
+
+    header div div.nav-right {
+        width: 50%;
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 70px;
+        display: inline-block;
+    }
+
+    header div div.nav-left {
+        width: 50%;
+        font-size: 1rem;
+        text-align: right;
+        margin-right: 70px;
+        display: inline-block;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    header div .nav-right,
+    header div .nav-left {
+        font-size: 1rem;
+    }
+
+    header form input {
+        width: 90%;
+    }
+
+    /* Search y lupa */
+
+    header div div.compra-cuotas {
+        font-size: 1rem;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer div i,
+footer div h3,
+footer div p {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .imgs-footer {
+    font-size: 40px;
+    margin: 40px 0 20px 0;
+    color: var(--color-celeste);
+}
+
+footer div i:hover.imgs-footer {
+    color: var(--color-azul);
+}
+
+footer span .rights {
+    max-width: 400px;
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    footer span p {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer section {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        max-width: 2200px;
+    }
+
+    footer div {
+        padding: 0 30px;
+    }
+}

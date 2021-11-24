@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    font-size: 16px;
+}
+:root{
+    --main-bg-amarillo:#eac926;
+    --main-bg-azul:#03264c;
+    --main-bg-celeste:#1259c3;
+    --main-bg-grisOscuro:#666;
+    --main-bg-grisClaro:#ebebeb;
+    --main-bg-verde:#39b54a;
+    
+    
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Santiago",
+    "last_name": "Quispe",
+    "email": "santiago@gmail.com",
+    "date_of_birth": "1988-11-02",
+    "address": "Las Naranjas N° 23",
+    "buyShell": "toBuy",
+    "category": [
+      "electro",
+      "fashion"
+    ],
+    "photo": "photo-1638107353907.jpg",
+    "password1": "123456",
+    "password2": "123456"
+  },
+  {
+    "id": "1",
+    "name": "Zacarías Santiago",
+    "last_name": "Quispe",
+    "email": "santiago1988quispep@gmail.com",
+    "date_of_birth": "1990-01-01",
+    "address": "Calle Matilda Ferrier entre 4to. y Luciano  Adorno #28",
+    "category": "fashion",
+    "photo": "photo-1638117795991.jpg",
+    "password1": "123456",
+    "password2": "123456"
+  }
+]

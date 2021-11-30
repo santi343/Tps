@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Ada",
+        "rol": "admin"
+    },
+    {
+        "id": 2,
+        "name": "Greta",
+        "rol": "admin"
+    },
+    {
+        "id": 1,
+        "name": "Vim",
+        "rol": "admin"
+    },
+    {
+        "id": 1,
+        "name": "Tim",
+        "rol": "admin"
+    },
+    {
+        "id": 1,
+        "name": "Santiago",
+        "rol": "no_admin"
+    }
+
+]

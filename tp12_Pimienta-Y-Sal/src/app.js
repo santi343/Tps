@@ -4,7 +4,7 @@ const path = require('path');
 const port = 3000;
 //Config express.static
 app.use(express.static(path.join(__dirname, '../public')))
-//SetEngani
+//SetEngine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //Routes
@@ -13,5 +13,6 @@ const routesDetail = require('./routes/detail');
 app.use('/', routesIndex);
 app.use('/detail', routesDetail);
 
-
 app.listen(port, ()=> console.log(`Listening on ${port}`));
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <form action="/users" method="post">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Cosme"  value="<%= locals.oldData ? oldData.name : null %>">
+        </div>
+        <% if (locals.errors && errors.name) { %>
+        <div >
+            <%= errors.name.msg %>
+        </div>
+        <% } %>
+        <div>
+            <label for="colour">Selecciona un Color de Fondo:</label>
+            <select name="colour" id="">
+                <option name="colour" value="Rojo">Rojo</option>
+                <option name="colour" value="Verde">Verde</option>
+                <option name="colour" value="Azul">Azul</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="cosmeFulanito@gmail.com" value=" <%= locals.oldData ? oldData.email : null%>">
+        </div>
+        <% if (locals.errors && errors.email) { %>
+        <div >
+            <%= errors.email.msg %>
+        </div>
+        <% } %>
+        <div>
+            <label for="age">Edad:</label>
+            <input type="number" name="age" id="age" placeholder="20" value="<%= locals.oldData ? oldData.age : null%>">
+        </div>
+        <% if (locals.errors && errors.age) { %>
+        <div >
+            <%= errors.age.msg %>
+        </div>
+        <% } %>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+
+    </form>
+</body>
+</html>

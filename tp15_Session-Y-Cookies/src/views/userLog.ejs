@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserLog</title>
+</head>
+<% if( data.colour === "Rojo" ){ %>
+<body style="background-color: red">
+    <% } else if( data.colour === "Verde") {%>
+    <body style="background-color: green">
+        <% } else{ %>
+        <body style="background-color: blue">
+            <% } %>
+
+    <h1>Hola</h1>
+    <h2> <%= data.name %></h2>
+    <h2> Elegiste el color: <%= data.colour %></h2>
+    <h2> Tu email  es: <%= data.email %></h2>
+    <h2> Tu edad es: <%= data.age %></h2>
+</body>
+</html>
